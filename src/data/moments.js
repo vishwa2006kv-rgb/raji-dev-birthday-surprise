@@ -37,3 +37,4 @@ export const momentsData = [
     date: 'Fun, goofy & forever vibes'
   }
 ];
+

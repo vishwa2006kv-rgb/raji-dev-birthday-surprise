@@ -145,3 +145,4 @@ const ProposalPage = ({ onYes }) => {
 };
 
 export default ProposalPage;
+

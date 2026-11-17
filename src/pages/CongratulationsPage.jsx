@@ -88,3 +88,4 @@ const CongratulationsPage = ({ onNext }) => {
 };
 
 export default CongratulationsPage;
+

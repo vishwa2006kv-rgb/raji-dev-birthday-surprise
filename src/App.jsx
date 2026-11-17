@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import FloatingHearts from './components/FloatingHearts';
 import MusicPlayer from './components/MusicPlayer';
@@ -15,14 +15,34 @@ import FinalPage from './pages/FinalPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('password');
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [volume, setVolume] = useState(0.75);
+  const audioRef = useRef(null);
+
+  // Requirement: Start playing audio when visitor clicks the first Unlock button
+  const startBackgroundMusic = () => {
+    if (audioRef.current && !isPlaying) {
+      audioRef.current.volume = volume;
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch((err) => {
+        console.log('Autoplay handled, waiting for interaction:', err);
+      });
+    }
+  };
 
   const goToPage = (pageName) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setCurrentPage(pageName);
   };
 
+  const handleUnlock = () => {
+    startBackgroundMusic();
+    goToPage('flight');
+  };
+
   const handleLoveLoop = () => {
-    // Reset back to the password screen smoothly
+    // Return smoothly to password screen without restarting or pausing music
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setCurrentPage('password');
   };
@@ -32,15 +52,21 @@ function App() {
       {/* Ambient Floating Hearts & Petals */}
       <FloatingHearts />
 
-      {/* Romantic Music Player (with Dev & Wife's song) */}
-      <MusicPlayer />
+      {/* Persistent Background Music Player with Control & Volume */}
+      <MusicPlayer
+        audioRef={audioRef}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+        volume={volume}
+        setVolume={setVolume}
+      />
 
-      {/* Page Transitions */}
+      {/* Smooth Page Transitions */}
       <AnimatePresence mode="wait">
         {currentPage === 'password' && (
           <PasswordPage
             key="page-password"
-            onUnlock={() => goToPage('flight')}
+            onUnlock={handleUnlock}
           />
         )}
 

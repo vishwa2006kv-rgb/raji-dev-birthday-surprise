@@ -77,3 +77,4 @@ const FloatingHearts = () => {
 };
 
 export default React.memo(FloatingHearts);
+

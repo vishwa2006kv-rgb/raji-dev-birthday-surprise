@@ -176,3 +176,4 @@ const PasswordPage = ({ onUnlock }) => {
 };
 
 export default PasswordPage;
+

@@ -179,3 +179,4 @@ const NotesPage = ({ onNext }) => {
 };
 
 export default NotesPage;
+

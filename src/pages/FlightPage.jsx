@@ -300,3 +300,4 @@ const FlightPage = ({ onNext }) => {
 };
 
 export default FlightPage;
+

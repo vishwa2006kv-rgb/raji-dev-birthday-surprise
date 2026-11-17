@@ -85,3 +85,4 @@ export const startCelebrationConfetti = (durationMs = 5000) => {
 
   return () => clearInterval(interval);
 };
+

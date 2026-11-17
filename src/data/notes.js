@@ -30,3 +30,4 @@ export const notesData = [
     text: "I want to keep making beautiful memories with you. I love you more and more then you know❤️🫂"
   }
 ];
+

@@ -129,3 +129,4 @@ const BirthdayPage = ({ onNext }) => {
 };
 
 export default BirthdayPage;
+

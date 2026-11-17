@@ -81,3 +81,4 @@ const BearCouple = () => {
 };
 
 export default BearCouple;
+
