@@ -179,7 +179,7 @@ const FlightPage = ({ onNext }) => {
           >
             Pondicherry 📍
           </span>
-          <span style={{ fontSize: '10px', color: '#FFB8D2' }}>My Heart</span>
+          <span style={{ fontSize: '10px', color: '#FFB8D2' }}>Raji's Heart</span>
         </div>
 
         {/* Destination City: Dubai */}

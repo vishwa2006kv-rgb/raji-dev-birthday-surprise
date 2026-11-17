@@ -134,6 +134,25 @@ function App() {
           />
         )}
       </AnimatePresence>
+
+      {/* Website Footer Branding */}
+      <footer
+        style={{
+          marginTop: '20px',
+          color: '#E8A5C4',
+          fontSize: '1.05rem',
+          textAlign: 'center',
+          fontFamily: 'var(--font-script)',
+          letterSpacing: '1px',
+          textShadow: '0 0 10px rgba(242, 56, 135, 0.4)',
+          zIndex: 10,
+          opacity: 0.9,
+          pointerEvents: 'none',
+          userSelect: 'none'
+        }}
+      >
+        Forever Yours, Raji ❤️
+      </footer>
     </div>
   );
 }

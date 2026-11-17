@@ -1,6 +1,6 @@
-# 💖 A Romantic Birthday Surprise for Dev ❤️
+# Raji ❤️ Dev – Forever Love Story
 
-A premium, interactive, romantic birthday surprise website crafted with love by a wife for her husband, **Dev**, on his special birthday (19 November 2026).
+A beautiful birthday surprise created with love for **Dev** by **Raji** on his special birthday (19 November 2026).
 
 Built with **React.js**, **Vite**, **Framer Motion**, and **Tailored CSS**, featuring deep burgundy and glowing pink aesthetics matching the design language.
 
@@ -13,7 +13,7 @@ Built with **React.js**, **Vite**, **Framer Motion**, and **Tailored CSS**, feat
    - Animated glowing heart lock, subtle shake on incorrect passcode, cute error notice, and smooth unlocking transition.
 
 2. **✈️ Pondicherry to Dubai Flight Journey**
-   - Represents the distance between Pondicherry (Wife) and Dubai (Dev).
+   - Represents the distance between Pondicherry (Raji) and Dubai (Dev).
    - Starry night sky, animated flight along a glowing trajectory, clouds, and departure/destination pins.
    - Heartwarming arrival message: *"Distance means nothing when hearts are connected. ❤️"*
 
@@ -102,4 +102,4 @@ npm run preview
 
 ---
 
-*Made with all the love in the world for Dev ❤️*
+Forever Yours, Raji ❤️
